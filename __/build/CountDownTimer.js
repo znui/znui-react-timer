@@ -20,8 +20,10 @@ module.exports = React.createClass({
     };
   },
   componentDidMount: function componentDidMount() {
-    this.state.valueTimestamp = new Date(this.props.value).getTime();
-    this.start();
+    if (this.props.value) {
+      this.state.valueTimestamp = new Date(this.props.value.split(' ').join('T')).getTime();
+      this.start();
+    }
   },
   componentWillUnmount: function componentWillUnmount() {
     if (this._interval) {
