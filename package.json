@@ -1,6 +1,6 @@
 {
   "name": "znui-react-timer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web timer component.",
   "main": "index.js",
   "scripts": {

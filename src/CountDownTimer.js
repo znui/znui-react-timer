@@ -81,7 +81,7 @@ module.exports = React.createClass({
 	},
 	render: function(){
 		return (
-			<div className="zr-count-down-timer">
+			<div className={znui.react.classname('zr-count-down-timer', this.props.className)} style={this.props.style}>
 				{
 					this.state.timing ? <div className="timing">
 							<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" className="svg-inline--fa fa-clock fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

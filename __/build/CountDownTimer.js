@@ -94,7 +94,8 @@ module.exports = React.createClass({
   },
   render: function render() {
     return /*#__PURE__*/React.createElement("div", {
-      className: "zr-count-down-timer"
+      className: znui.react.classname('zr-count-down-timer', this.props.className),
+      style: this.props.style
     }, this.state.timing ? /*#__PURE__*/React.createElement("div", {
       className: "timing"
     }, /*#__PURE__*/React.createElement("svg", {
